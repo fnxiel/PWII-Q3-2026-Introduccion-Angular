@@ -1,0 +1,35 @@
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+img{
+    width: 512px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+span{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.card-cancion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin: 1rem;
+}

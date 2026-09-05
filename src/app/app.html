@@ -230,8 +230,41 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
+      <h1>Programacion web 2</h1>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <p>{{ descripcion() }}</p>
+      <p>Version: {{ version }}</p>
+
+      @for (cancion of canciones; track $index) {
+        <app-cancion 
+          [titulo]="cancion.titulo" 
+          [descripcion]="cancion.descripcion" 
+          [duracion]="cancion.duracion" 
+          [imagen]="cancion.imagen"
+        ></app-cancion>
+      }
+      
+<!-- 
+      <app-cancion 
+      [titulo]="canciones[0].titulo" 
+      [descripcion]="canciones[0].descripcion" 
+      [duracion]="canciones[0].duracion" 
+      [imagen]="canciones[0].imagen"
+      ></app-cancion>
+      <app-cancion 
+      [titulo]="canciones[1].titulo" 
+      [descripcion]="canciones[1].descripcion" 
+      [duracion]="canciones[1].duracion" 
+      [imagen]="canciones[1].imagen"
+      ></app-cancion>
+      <app-cancion 
+      [titulo]="canciones[2].titulo" 
+      [descripcion]="canciones[2].descripcion" 
+      [duracion]="canciones[2].duracion" 
+      [imagen]="canciones[2].imagen"
+      ></app-cancion> -->
+
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">

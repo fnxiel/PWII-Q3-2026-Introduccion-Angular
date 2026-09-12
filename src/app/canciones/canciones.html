@@ -1,0 +1,12 @@
+<h1>Canciones</h1>
+@for (cancion of cancionesFiltradas; track $index) {
+        <app-cancion 
+          [id]="cancion.id"
+          [titulo]="cancion.titulo" 
+          [descripcion]="cancion.descripcion" 
+          [duracion]="cancion.duracion" 
+          [imagen]="cancion.imagen"
+          [destacado]="cancion.destacado"
+          [resena]="cancion.resena"
+        ></app-cancion>
+      }

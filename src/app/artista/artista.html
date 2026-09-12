@@ -1,0 +1,15 @@
+<div class="card-artista">
+    artista: {{ nombre }}
+    <br>
+    genero: {{ genero }}
+    <br>
+    pais: {{ pais }}
+    <br>
+    <img src="{{ imagen }}" alt="Imagen del artista">
+    <br>
+    @if (biografia) {
+        <h2>Biografía:</h2>
+        <p>{{ biografia }}</p>
+    }  
+
+</div>

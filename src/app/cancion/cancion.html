@@ -1,6 +1,13 @@
-<div class="card-cancion">
+<!-- <div class="card-cancion" [class]="destacado ? 'destacado' : ''"> -->
+<div class="card-cancion" [class.destacado]="destacado">
 <h1>{{ titulo }} </h1>
 <img src="{{imagen.src}}" alt="{{imagen.alt}}">
 <p>{{descripcion}}</p>
 <span>Duración: {{duracion}} minutos</span>
+
+@if (resena) {
+    <h2>Reseña:</h2>
+    <p class="resena">{{ resena }}</p>
+}
+
 </div>

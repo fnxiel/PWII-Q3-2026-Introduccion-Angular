@@ -1,0 +1,10 @@
+<h1>Artistas</h1>
+@for (artista of artistas; track $index) {
+    <app-artista 
+      [nombre]="artista.nombre" 
+      [genero]="artista.genero" 
+      [pais]="artista.pais" 
+      [imagen]="artista.imagen"
+      [biografia]="artista.biografia"
+    ></app-artista>
+}

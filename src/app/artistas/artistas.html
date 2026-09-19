@@ -1,4 +1,9 @@
 <h1>Artistas</h1>
+<button (click)="notificacionesService.agregarNotificacion(
+  'Notificacion desde Artistas',
+  'Esta es una notificación desde la lista de artistas.',
+  'info'
+)">Notificar desde Canciones</button>
 @for (artista of artistas; track $index) {
     <app-artista 
       [nombre]="artista.nombre" 
@@ -8,3 +13,5 @@
       [biografia]="artista.biografia"
     ></app-artista>
 }
+
+

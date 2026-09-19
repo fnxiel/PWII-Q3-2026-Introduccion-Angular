@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ICancion } from '../models/interface/ICancion';
 import { Cancion } from '../cancion/cancion';
 import { ActivatedRoute } from '@angular/router';
+import { NotificacionesService } from '../services/notificaciones';
 
 @Component({
   selector: 'app-canciones',
@@ -14,7 +15,10 @@ export class Canciones implements OnInit {
   idFiltro: number | null = null;
 
   //Inyeccion de dependencias
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute, 
+    public notificacionesService: NotificacionesService) {
+
     console.log('este es el constructor')
   }
 

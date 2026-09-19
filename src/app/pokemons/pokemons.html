@@ -1,0 +1,15 @@
+<h1>Listado de pokemons</h1>
+@if (pokemons() ) {
+  <button (click)="pokeapi.getPokemons()">Actualizar pokemons</button>
+} @else {
+  <button (click)="pokeapi.getPokemons()">Cargar pokemons</button>
+}
+<div>Mostrando la informacion de {{ pokemons()?.count }} pokemons</div>
+@for (pokemon of pokemons()?.results; track $index) {
+  <div class="card-pokemon">
+    <h2>{{ pokemon.name }}</h2>
+    <p>{{ pokemon.url }}</p>
+  </div>
+}@empty {
+  <div>No hay pokemons</div>
+}

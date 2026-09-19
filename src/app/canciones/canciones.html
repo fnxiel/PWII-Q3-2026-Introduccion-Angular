@@ -1,4 +1,9 @@
 <h1>Canciones</h1>
+<button (click)="notificacionesService.agregarNotificacion(
+  'Notificacion desde Canciones',
+  'Esta es una notificación desde la lista de canciones.',
+  'info'
+)">Notificar desde Canciones</button>
 @for (cancion of cancionesFiltradas; track $index) {
         <app-cancion 
           [id]="cancion.id"

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Artista } from '../artista/artista';
 import { IArtista } from '../models/interface/IArtista';
+import { NotificacionesService } from '../services/notificaciones';
 
 @Component({
   selector: 'app-artistas',
@@ -32,4 +33,7 @@ export class Artistas {
       biografia: 'Biografía del Artista 3. Este artista es conocido por su talento excepcional y ha colaborado con muchos músicos famosos.'
     }
   ]
+
+  constructor(public notificacionesService: NotificacionesService) {}
+
 }

@@ -1,0 +1,10 @@
+.card-pokemon {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

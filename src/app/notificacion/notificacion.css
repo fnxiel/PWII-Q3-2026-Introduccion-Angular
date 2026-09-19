@@ -1,0 +1,20 @@
+.notificacion{
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.notificacion-titulo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.notificacion-mensaje{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.notificacion-fecha{
+    font-size: 12px;
+    color: #999;
+}

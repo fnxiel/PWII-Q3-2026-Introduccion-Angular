@@ -1,0 +1,12 @@
+<h1>Notificaciones</h1>
+<button (click)="notificacionService.limpiartNotificaciones()">Limpiar notificaciones</button>
+@for (notificacion of notificacionService.notificaciones; track $index) {
+    <app-notificacion
+      [titulo]="notificacion.titulo"
+      [mensaje]="notificacion.mensaje"
+      [tipo]="notificacion.tipo"
+      [fecha]="notificacion.fecha"
+    ></app-notificacion>
+} @empty {
+    <div>No hay notificaciones</div>
+}
